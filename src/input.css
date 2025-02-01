@@ -4,6 +4,29 @@
     @apply py-12 md:py-35; /* Use utility classes directly */
   }
 }
+
+/* type writing animation */
+
+.typing-heading {
+  width: 9ch;
+  animation: typing 2s steps(9), blink .5s step-end infinite alternate;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+/* bottom to up animation */
 @-webkit-keyframes animatetop {
   from {
     top: -300px;
