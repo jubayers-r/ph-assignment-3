@@ -1,6 +1,8 @@
 @import "tailwindcss";
-@theme {
-  
+@layer base {
+  section {
+    @apply py-12 md:py-35; /* Use utility classes directly */
+  }
 }
 @plugin "daisyui" {
     themes: light --default;
